@@ -4,6 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My 30-Day Progress Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌱 My 30-Day Progress Tracker</h1>
+  </header>
+
+  <section id="log-form">
+    <h2>Add Today’s Progress</h2>
+    <form id="progressForm">
+      <input type="date" id="date" required />
+      <input type="text" id="task" placeholder="What did you work on?" required />
+      <textarea id="reflection" placeholder="Reflections for today..."></textarea>
+      <button type="submit">Save</button>
+    </form>
+  </section>
+
+  <section id="progress-list">
+    <h2>Past Logs</h2>
+    <ul id="logEntries"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My 30-Day Progress Tracker</title>
   <style>
     body {
       font-family: Arial, sans-serif;
