@@ -1,0 +1,62 @@
+/* Default Futuristic Theme */
+.futuristic-theme {
+    --primary-glow: #00ff88;
+    --secondary-glow: #0088ff;
+    --accent-glow: #ff0088;
+    --dark-bg: #0a0a0f;
+    --darker-bg: #050508;
+}
+
+/* Cyberpunk Theme */
+.cyberpunk-theme {
+    --primary-glow: #ff0088;
+    --secondary-glow: #00ffff;
+    --accent-glow: #ffff00;
+    --dark-bg: #1a0b2e;
+    --darker-bg: #0d0519;
+}
+
+/* Matrix Theme */
+.matrix-theme {
+    --primary-glow: #00ff41;
+    --secondary-glow: #008f11;
+    --accent-glow: #003b00;
+    --dark-bg: #000000;
+    --darker-bg: #001100;
+}
+
+/* Terminal Theme */
+.terminal-theme {
+    --primary-glow: #00ff00;
+    --secondary-glow: #008800;
+    --accent-glow: #004400;
+    --dark-bg: #001100;
+    --darker-bg: #000800;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.theme-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-glow);
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+.theme-btn.futuristic { background: linear-gradient(45deg, #00ff88, #0088ff); }
+.theme-btn.cyberpunk { background: linear-gradient(45deg, #ff0088, #00ffff); }
+.theme-btn.matrix { background: linear-gradient(45deg, #00ff41, #008f11); }
+.theme-btn.terminal { background: linear-gradient(45deg, #00ff00, #008800); }
